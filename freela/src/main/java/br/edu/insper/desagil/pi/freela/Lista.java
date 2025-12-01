@@ -8,16 +8,6 @@ public class Lista {
     public Lista(){
         this.tarefas=new ArrayList<>();
     }
-    public  List<Tarefa> getTarefas(){return tarefas;}
-
-    public void adiciona(Tarefa tarefa){
-        int identificador=tarefa.getIdentificador();
-        for(Tarefa t: tarefas){
-            if(identificador==t.getIdentificador()){
-                return;
-            }
-        }
-        tarefas.add(tarefa);
-
-    }
+    public List<Tarefa> getTarefas(){return tarefas;}
+    public void adiciona(Tarefa tarefa){}
 }
